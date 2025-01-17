@@ -1,0 +1,227 @@
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(imgs/Group5\(1\).png);
+}
+.main {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.text {
+  width: 40%;
+  color: white;
+}
+
+.smalltext {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.bigtext {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: -0.5208333134651184px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.div1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  border-radius: 10px;
+  width: 100%;
+  background-color: white;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+input {
+  height: 15%;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(222, 222, 222, 1);
+}
+
+button {
+  display: grid;
+  place-content: center;
+  padding: 10px 20px;
+  background: rgba(56, 204, 139, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+  width: 100%;
+  height: 15%;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+button:hover {
+  background: rgba(119, 226, 179, 1);
+}
+
+.error {
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 16.5px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: red;
+  font-size: 0.9em;
+}
+.errorimg1,
+.errorimg2,
+.errorimg3,
+.errorimg4 {
+  display: none;
+}
+.errorimg1 {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.errorimg2 {
+  position: absolute;
+  right: 0;
+  top: 70px;
+}
+.errorimg3 {
+  position: absolute;
+  right: 0;
+  top: 140px;
+}
+.errorimg4 {
+  position: absolute;
+  right: 0;
+  top: 205px;
+}
+.errorimage {
+  display: block;
+}
+.invalid {
+  border: red 2px solid;
+}
+.button2 {
+  border-radius: 5px;
+  background: rgba(94, 84, 164, 1);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.2678571045398712px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.lal {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.2678571045398712px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.tiny1 {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(186, 183, 212, 1);
+}
+.tiny {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ff7979;
+}
+@media (max-width: 1040px) {
+  body {
+    height: 100%;
+  }
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form {
+    height: 442px;
+  }
+  .button2 {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    width: 60%;
+  }
+  .div1 {
+    width: 70%;
+  }
+  .bigtext,
+  .smalltext {
+    text-align: center;
+  }
+}
