@@ -21,7 +21,6 @@ document.getElementById("validationForm").addEventListener("submit", A = (event)
         isValid = false
     }
     const email = document.getElementById("email").value.trim()
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!email) {
         document.getElementById("emailError").textContent = "Email cannot be empty."
         document.getElementById("email").classList.add("invalid")
