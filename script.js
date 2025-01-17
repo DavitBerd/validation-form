@@ -3,6 +3,8 @@ document.getElementById("validationForm").addEventListener("submit", A = (event)
     let isValid = true
 
     document.querySelectorAll(".error").forEach((error) => (error.textContent = ""))
+    document.querySelectorAll(".invalid").forEach((field) => field.classList.remove("invalid"))
+    document.querySelectorAll(".errorimage").forEach((img) => img.classList.remove("errorimage"))
 
     const username = document.getElementById("firstname").value.trim()
     if (!username) {
